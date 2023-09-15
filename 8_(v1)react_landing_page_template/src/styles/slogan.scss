@@ -1,0 +1,38 @@
+.slogan-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.slogan-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.slogan-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .slogan-title {
+    font-size: 1.5rem;
+  }
+
+  .slogan-text {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slogan-title {
+    font-size: 1.2rem;
+  }
+
+  .slogan-text {
+    font-size: 0.9rem;
+  }
+}

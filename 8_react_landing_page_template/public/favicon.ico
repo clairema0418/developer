@@ -1,0 +1,13 @@
+As an AI language model, I cannot directly create or upload files like images. However, I can guide you on how to create a favicon for your website.
+
+1. Create a square image (preferably 32x32 or 16x16 pixels) that represents your website or brand. You can use any image editing software like Adobe Photoshop, GIMP, or an online tool like Favicon.io (https://favicon.io/).
+
+2. Save the image as "favicon.ico" in the "public" folder of your Next.js project.
+
+3. In your "pages/_document.tsx" file, add the following line inside the `<Head>` component to reference the favicon:
+
+```tsx
+<link rel="icon" href="/favicon.ico" />
+```
+
+This will ensure that your favicon is displayed in the browser tab when users visit your website.

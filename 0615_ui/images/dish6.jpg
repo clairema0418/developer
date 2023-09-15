@@ -1,0 +1,13 @@
+As an AI language model, I cannot create or upload image files directly. However, I can provide you with a placeholder image URL that you can use for the "dish6.jpg" image. You can replace this URL with the actual image file path once you have the image file.
+
+For the "dish6.jpg" image, you can use the following placeholder image URL:
+
+https://via.placeholder.com/300x200?text=Dish6
+
+In your HTML code, you can reference this image like this:
+
+```html
+<img src="images/dish6.jpg" alt="Dish 6">
+```
+
+Remember to replace the placeholder URL with the actual file path of "images/dish6.jpg" once you have the image file.

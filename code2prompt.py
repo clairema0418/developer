@@ -2,7 +2,7 @@ import modal
 import os
 
 stub = modal.Stub("smol-codetoprompt-v1")
-generatedDir = "generated"
+generatedDir = "6_go_template"
 openai_image = modal.Image.debian_slim().pip_install("openai")
 
 

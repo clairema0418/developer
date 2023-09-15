@@ -1,7 +1,7 @@
 import sys
 import os
 
-generatedDir = "generated"
+generatedDir = "8_react_landing_page_template"
 
 
 def read_file(filename):

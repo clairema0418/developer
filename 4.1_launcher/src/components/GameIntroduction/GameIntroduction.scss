@@ -1,0 +1,44 @@
+.game-introduction {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  .game-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .game-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    .download-button,
+    .launch-button {
+      margin: 0 0.5rem;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .game-introduction {
+    .game-description {
+      font-size: 1.2rem;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .game-introduction {
+    .game-description {
+      font-size: 1.4rem;
+    }
+  }
+}

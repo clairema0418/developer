@@ -3,7 +3,8 @@ import os
 import ast
 from time import sleep
 
-generatedDir = "generated"
+
+generatedDir = "0718_to_websocket"
 openai_model = "gpt-4"  # or 'gpt-3.5-turbo',
 openai_model_max_tokens = 2000  # i wonder how to tweak this properly
 
@@ -26,6 +27,8 @@ def generate_response(system_prompt, user_prompt, *args):
 
     # Set up your OpenAI API credentials
     openai.api_key = os.environ["OPENAI_API_KEY"]
+
+    print(openai.api_key)
 
     messages = []
     messages.append({"role": "system", "content": system_prompt})

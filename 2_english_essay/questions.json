@@ -1,0 +1,26 @@
+[
+  {
+    "question": "What is the essence of life compared to in the text?",
+    "option_a": "A gentle breeze",
+    "option_b": "Petals kissed by the morning dew",
+    "option_c": "A labyrinth",
+    "option_d": "A celestial navigator",
+    "answer": "B"
+  },
+  {
+    "question": "What do we uncover in the depths of introspection according to the text?",
+    "option_a": "The enigmatic dance of fate and free will",
+    "option_b": "The importance of cultivating compassion",
+    "option_c": "The profound truth that our existence is a fleeting whisper in the grand symphony of the universe",
+    "option_d": "The beauty of our shared human experience",
+    "answer": "C"
+  },
+  {
+    "question": "What does the tapestry of life create according to the text?",
+    "option_a": "A harmonious orchestra",
+    "option_b": "A kaleidoscope of emotions",
+    "option_c": "A cosmic dance of life",
+    "option_d": "A masterpiece, a testament to the beauty of our shared human experience",
+    "answer": "D"
+  }
+]

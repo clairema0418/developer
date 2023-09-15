@@ -1,0 +1,47 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.game-introduction-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  .game-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .game-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+
+    button {
+      @include button-styles;
+      margin: 0 1rem;
+    }
+  }
+}
+
+@media (min-width: $tablet) {
+  .game-introduction-page {
+    .game-description {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .game-introduction-page {
+    .game-description {
+      font-size: 1.8rem;
+    }
+  }
+}

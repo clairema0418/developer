@@ -1,0 +1,1 @@
+The "public/images/products" is a folder for storing product images, not a file for generating code. You can place your product images in this folder, and they will be accessible in your Next.js application.

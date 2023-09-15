@@ -1,0 +1,8 @@
+node_modules/
+dist/
+*.log
+*.lock
+*.exe
+.DS_Store
+.env
+.cache/

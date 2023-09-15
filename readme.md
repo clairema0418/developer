@@ -1,6 +1,6 @@
 # smol developer
 
-***Human-centric & Coherent Whole Program Synthesis*** aka your own personal junior developer
+**_Human-centric & Coherent Whole Program Synthesis_** aka your own personal junior developer
 
 > [Build the thing that builds the thing!](https://twitter.com/swyx/status/1657578738345979905) a `smol dev` for every dev in every situation
 
@@ -12,7 +12,7 @@ AI that is helpful, harmless, and honest is complemented by a codebase that is s
   <img height=200 src="https://pbs.twimg.com/media/FwEzVCcaMAE7t4h?format=jpg&name=large" />
 </p>
 
-*engineering with prompts, rather than prompt engineering* 
+_engineering with prompts, rather than prompt engineering_
 
 The demo example in `prompt.md` shows the potential of AI-enabled, but still firmly human developer centric, workflow:
 
@@ -22,12 +22,12 @@ The demo example in `prompt.md` shows the potential of AI-enabled, but still fir
 - Human can:
   - simply add to the prompt as they discover underspecified parts of the prompt
   - manually runs the code and identifies errors
-  - *paste the error into the prompt* just like they would file a GitHub issue
+  - _paste the error into the prompt_ just like they would file a GitHub issue
   - for extra help, they can use `debugger.py` which reads the whole codebase to make specific code change suggestions
 
-Loop until happiness is attained. Notice that AI is only used as long as it is adding value - once it gets in your way, just take over the codebase from your smol junior developer with no fuss and no hurt feelings. (*we could also have smol-dev take over an existing codebase and bootstrap its own prompt... but that's a Future Direction*)
+Loop until happiness is attained. Notice that AI is only used as long as it is adding value - once it gets in your way, just take over the codebase from your smol junior developer with no fuss and no hurt feelings. (_we could also have smol-dev take over an existing codebase and bootstrap its own prompt... but that's a Future Direction_)
 
-*Not no code, not low code, but some third thing.* 
+_Not no code, not low code, but some third thing._
 
 Perhaps a higher order evolution of programming where you still need to be technical, but no longer have to implement every detail at least to scaffold things out.
 
@@ -41,12 +41,12 @@ Perhaps a higher order evolution of programming where you still need to be techn
   <img src="https://github.com/smol-ai/developer/assets/6764957/6ffaac3b-5d90-460a-a590-c8a8c004bd36" height=200 />
 
 - [Prompt to Pokemon App](https://twitter.com/RobertCaracaus/status/1659312419485761536?s=20)
-  
+
   <img src="https://github.com/smol-ai/developer/assets/6764957/15fa189a-3f52-4618-ac8e-2a77b6500264" height=200 />
-  
+
 - [Political Campaign CRM Program example](https://github.com/smol-ai/developer/pull/22/files)
 
-I'm actively seeking more examples, please PR yours! 
+I'm actively seeking more examples, please PR yours!
 
 sorry for the lack of examples, I know that is frustrating but I wasnt ready for so many of you lol
 
@@ -63,7 +63,6 @@ please send in alternative implementations, and deploy strategies on alternative
 naturally generated with gpt4, like [we did for babyagi](https://twitter.com/swyx/status/1648724820316786688)
 ![image](https://github.com/smol-ai/developer/assets/6764957/f8fc68f4-77f6-43ee-852f-a35fb195430a)
 
-
 ### innovations and insights
 
 > Please subscribe to https://latent.space/ for a fuller writeup and insights and reflections
@@ -74,12 +73,12 @@ naturally generated with gpt4, like [we did for babyagi](https://twitter.com/swy
   - teaching the program to understand how to code around a new API (Anthropic's API is after GPT3's knowledge cutoff) by just pasting in the `curl` input and output
   - pasting error messages into the prompt and vaguely telling the program how you'd like it handled. it kind of feels like "logbook driven programming".
 - **Debugging by `cat`ing** the whole codebase with your error message and getting specific fix suggestions - particularly delightful!
-- **Tricks for whole program coherence** - our chosen example usecase, Chrome extensions, have a lot of indirect dependencies across files. Any hallucination of cross dependencies causes the whole program to error. 
+- **Tricks for whole program coherence** - our chosen example usecase, Chrome extensions, have a lot of indirect dependencies across files. Any hallucination of cross dependencies causes the whole program to error.
   - We solved this by adding an intermediate step asking GPT to think through `shared_dependencies.md`, and then insisting on using that in generating each file. This basically means GPT is able to talk to itself...
-  - ... but it's not perfect, yet. `shared_dependencies.md` is sometimes not comperehensive in understanding what are hard dependencies between files. So we just solved it by specifying a specific `name` in the prompt. felt dirty at first but it works, and really it's just clear unambiguous communication at the end of the day. 
+  - ... but it's not perfect, yet. `shared_dependencies.md` is sometimes not comperehensive in understanding what are hard dependencies between files. So we just solved it by specifying a specific `name` in the prompt. felt dirty at first but it works, and really it's just clear unambiguous communication at the end of the day.
   - see `prompt.md` for SOTA smol-dev prompting
 - **Low activation energy for unfamiliar APIs**
-  - we have never really learned css animations, but now can just say we want a "juicy css animated red and white candy stripe loading indicator" and it does the thing. 
+  - we have never really learned css animations, but now can just say we want a "juicy css animated red and white candy stripe loading indicator" and it does the thing.
   - ditto for Chrome Extension Manifest v3 - the docs are an abject mess, but fortunately we don't have to read them now to just get a basic thing done
   - the Anthropic docs (bad bad) were missing guidance on what return signature they have. so just curl it and dump it in the prompt lol.
 - **Modal is all you need** - we chose Modal to solve 4 things:
@@ -100,7 +99,7 @@ The feedback loop is very slow right now (`time` says about 2-4 mins to generate
 
 ## install
 
-it's basically: 
+it's basically:
 
 - `git clone https://github.com/smol-ai/developer`.
 - copy over `.example.env` to `.env` filling in your API keys.
@@ -138,16 +137,16 @@ this entire extension was generated by the prompt in `prompt.md` (except for the
 basic usage
 
 ```bash
-modal run main.py --prompt "a Chrome extension that, when clicked, opens a small window with a page where you can enter a prompt for reading the currently open page and generating some response from openai"   
+modal run main.py --prompt "a Chrome extension that, when clicked, opens a small window with a page where you can enter a prompt for reading the currently open page and generating some response from openai"
 ```
 
 after a while of adding to your prompt, you can extract your prompt to a file, as long as your "prompt" ends in a .md extension we'll go look for that file
 
 ```bash
-modal run main.py --prompt prompt.md   
+modal run main.py --prompt prompt.md
 ```
 
-each time you run this, the generated directory is deleted (except for images) and all files are rewritten from scratch. 
+each time you run this, the generated directory is deleted (except for images) and all files are rewritten from scratch.
 
 In the `shared_dependencies.md` file is a helper file that ensures coherence between files.
 
@@ -166,6 +165,14 @@ modal run debugger.py --prompt "Uncaught (in promise) TypeError: Cannot destruct
 
 # gpt4
 modal run debugger.py --prompt "your_error msg_here" --model=gpt-4
+
+python main_no_modal.py test.md --outputdir=englishLearnPlatform
+python main_no_modal.py --prompt test.md --outputdir=englishLearnPlatform
+python debugger_no_modal.py --prompt "Could not find a required file.
+  Name: index.js
+  Searched in: /Users/claire/repo/github/developer/generated/src
+error Command failed with exit code 1.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command." --model=gpt-4
 ```
 
 ## smol pm
@@ -204,7 +211,7 @@ things to try/would accept open issue discussions and PRs:
 - **ability to install its own dependencies**
   - this leaks into depending on the execution environment, which we all know is the path to dependency madness. how to avoid? dockerize? nix? [web container](https://twitter.com/litbid/status/1658154530385670150)?
   - Modal has an interesting possibility: generate functions that speak modal which also solves the dependency thing https://twitter.com/akshat_b/status/1658146096902811657
-- **self-heal** by running the code itself and use errors as information for reprompting 
+- **self-heal** by running the code itself and use errors as information for reprompting
   - however its a bit hard to get errors from the chrome extension environment so we did not try this
 - **using anthropic as the coding layer**
   - you can run `modal run anthropic.py --prompt prompt.md --outputdir=anthropic` to try it

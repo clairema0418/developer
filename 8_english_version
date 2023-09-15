@@ -1,0 +1,63 @@
+Please help me develop a product image website using Next.js. The website should include the following:
+
+- Company brand logo and slogan
+- Product photos and specifications
+- Product usage scenarios and examples
+- Product features and advantages
+- Customer reviews and case studies
+- Customer service and contact information
+- News updates and company events
+- Contact us and join us options
+
+Additional requirements:
+
+1. Develop using SCSS
+2. Develop using TypeScript
+3. Integrate API using @reduxjs/toolkit
+4. Use clsx and emotion libraries
+5. Use Material-UI, but use SCSS for layout
+6. Create versions for mobile, tablet, and desktop
+7. Ensure proper SEO handling
+8. Create apiSlice and generate test data using JSON placed in the config file
+9. Organize page files in the `/src/pages` directory with corresponding SCSS and TSX files in the same folder
+
+## File Structure
+
+```
+.
+├── public
+│   ├── index.html
+│   ├── robots.txt
+│   └── manifest.json
+├── src
+│   ├── react-app-env.d.ts
+│   ├── App.tsx
+│   ├── App.scss
+│   ├── index.tsx
+│   ├── assets
+│   ├── components
+│   ├── features
+│   ├── hooks
+│   ├── lib
+│   ├── pages
+│   ├── locales
+│   ├── config
+│   ├── types
+│   │   ├── interfaces
+│   │   │   └── index.ts
+│   ├── utils
+│   └── services
+│       ├── api
+│       │   └── apiSlice.ts
+│       ├── middlewares
+│       └── store.ts
+├── .gitignore
+├── .env.local
+├── env.example
+├── .tool-versions
+├── tsconfig.json
+├── package.json
+└── README.md
+```
+
+Note: This is a suggested file structure for organizing your Next.js project. You can adjust it according to your specific needs.

@@ -1,0 +1,33 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.game-lobby-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+
+  .game-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+
+  @media (max-width: $tablet) {
+    padding: 1rem;
+
+    .game-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+  }
+
+  @media (max-width: $mobile) {
+    padding: 0.5rem;
+
+    .game-list {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "productData": [
+    {
+      "id": 1,
+      "name": "Product 1",
+      "image": "/images/products/product1.jpg",
+      "specifications": {
+        "dimension": "10x10x10",
+        "weight": "1kg",
+        "material": "Plastic"
+      },
+      "features": [
+        "Feature 1",
+        "Feature 2",
+        "Feature 3"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Product 2",
+      "image": "/images/products/product2.jpg",
+      "specifications": {
+        "dimension": "20x20x20",
+        "weight": "2kg",
+        "material": "Metal"
+      },
+      "features": [
+        "Feature 1",
+        "Feature 2",
+        "Feature 3"
+      ]
+    }
+  ],
+  "customerReviewData": [
+    {
+      "id": 1,
+      "productId": 1,
+      "review": "Great product!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "review": "Amazing quality!",
+      "rating": 4
+    }
+  ],
+  "caseStudyData": [
+    {
+      "id": 1,
+      "productId": 1,
+      "title": "Case Study 1",
+      "description": "This is a description of case study 1."
+    },
+    {
+      "id": 2,
+      "productId": 2,
+      "title": "Case Study 2",
+      "description": "This is a description of case study 2."
+    }
+  ],
+  "newsUpdateData": [
+    {
+      "id": 1,
+      "title": "News Update 1",
+      "date": "2022-01-01",
+      "content": "This is the content of news update 1."
+    },
+    {
+      "id": 2,
+      "title": "News Update 2",
+      "date": "2022-01-02",
+      "content": "This is the content of news update 2."
+    }
+  ],
+  "companyEventData": [
+    {
+      "id": 1,
+      "title": "Company Event 1",
+      "date": "2022-02-01",
+      "location": "New York",
+      "description": "This is a description of company event 1."
+    },
+    {
+      "id": 2,
+      "title": "Company Event 2",
+      "date": "2022-02-02",
+      "location": "Los Angeles",
+      "description": "This is a description of company event 2."
+    }
+  ]
+}

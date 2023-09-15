@@ -1,0 +1,50 @@
+.usage-scenarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 2rem 0;
+
+  .scenario {
+    flex: 1;
+    max-width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1rem;
+      color: #666;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .usage-scenarios {
+    .scenario {
+      max-width: 45%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .usage-scenarios {
+    .scenario {
+      max-width: 100%;
+    }
+  }
+}

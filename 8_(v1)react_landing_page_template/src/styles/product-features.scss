@@ -1,0 +1,37 @@
+.product-features {
+  padding: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .feature {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      width: 50%;
+    }
+
+    @media (min-width: 992px) {
+      width: 33.33%;
+    }
+
+    .feature-icon {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-title {
+      font-size: 1.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+
+    .feature-description {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+  }
+}

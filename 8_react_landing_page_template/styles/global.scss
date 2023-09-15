@@ -1,0 +1,47 @@
+@import 'components/BrandLogo/BrandLogo.scss';
+@import 'components/ProductPhotos/ProductPhotos.scss';
+@import 'components/ProductSpecifications/ProductSpecifications.scss';
+@import 'components/UsageScenarios/UsageScenarios.scss';
+@import 'components/ProductFeatures/ProductFeatures.scss';
+@import 'components/CustomerReviews/CustomerReviews.scss';
+@import 'components/CaseStudies/CaseStudies.scss';
+@import 'components/CustomerService/CustomerService.scss';
+@import 'components/NewsUpdates/NewsUpdates.scss';
+@import 'components/CompanyEvents/CompanyEvents.scss';
+@import 'components/ContactUs/ContactUs.scss';
+@import 'components/JoinUs/JoinUs.scss';
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 50px 0;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+}

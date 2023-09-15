@@ -1,0 +1,33 @@
+.input-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+
+  label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+
+    &:focus {
+      border-color: #007bff;
+      box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    }
+  }
+
+  @media (min-width: 768px) {
+    label {
+      font-size: 1.2rem;
+    }
+
+    input {
+      font-size: 1.2rem;
+    }
+  }
+}

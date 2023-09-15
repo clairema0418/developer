@@ -1,0 +1,26 @@
+[
+  {
+    "question": "台灣最早的居民是哪個族群？",
+    "option_a": "荷蘭人",
+    "option_b": "西班牙人",
+    "option_c": "原住民族群",
+    "option_d": "漢族人口",
+    "answer": "C"
+  },
+  {
+    "question": "根據《馬關條約》，哪個國家在 1895 年接管了台灣？",
+    "option_a": "荷蘭",
+    "option_b": "西班牙",
+    "option_c": "清朝",
+    "option_d": "日本",
+    "answer": "D"
+  },
+  {
+    "question": "在清朝統治下，台灣見證了大量來自哪兩個地區的移民潮？",
+    "option_a": "福建和廣東",
+    "option_b": "江蘇和浙江",
+    "option_c": "山東和河南",
+    "option_d": "四川和貴州",
+    "answer": "A"
+  }
+]

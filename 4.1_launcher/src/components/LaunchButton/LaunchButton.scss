@@ -1,0 +1,28 @@
+.launch-button {
+  display: inline-block;
+  background-color: #4caf50;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #3e8e41;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    font-size: 16px;
+  }
+
+  @media (min-width: 1024px) {
+    font-size: 18px;
+  }
+}
